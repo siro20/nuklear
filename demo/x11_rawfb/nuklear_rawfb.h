@@ -118,9 +118,9 @@ nk_rawfb_line_horizontal(const struct rawfb_context *rawfb,
                          const short x1,
                          const struct nk_color col)
 {
-    unsigned int i, n;
     unsigned int c[16];
     unsigned int *ptr = (unsigned int *)rawfb->fb.pixels;
+    long i, n;
 
     ptr += y * rawfb->fb.w;
     ptr += x0;
